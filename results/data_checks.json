@@ -1,0 +1,50 @@
+[
+  {
+    "controller": "critical",
+    "rows": 100001,
+    "columns": [
+      "time_s",
+      "reference",
+      "output",
+      "error",
+      "control"
+    ],
+    "time_start_s": 0.0,
+    "time_end_s": 100.0,
+    "nonfinite_values": 0,
+    "strictly_increasing_time": true,
+    "error_column_consistent": true
+  },
+  {
+    "controller": "fast",
+    "rows": 100001,
+    "columns": [
+      "time_s",
+      "reference",
+      "output",
+      "error",
+      "control"
+    ],
+    "time_start_s": 0.0,
+    "time_end_s": 100.0,
+    "nonfinite_values": 0,
+    "strictly_increasing_time": true,
+    "error_column_consistent": true
+  },
+  {
+    "controller": "chr",
+    "rows": 100001,
+    "columns": [
+      "time_s",
+      "reference",
+      "output",
+      "error",
+      "control"
+    ],
+    "time_start_s": 0.0,
+    "time_end_s": 100.0,
+    "nonfinite_values": 0,
+    "strictly_increasing_time": true,
+    "error_column_consistent": true
+  }
+]

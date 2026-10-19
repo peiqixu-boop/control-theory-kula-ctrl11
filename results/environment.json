@@ -1,0 +1,17 @@
+{
+  "utc_started": "2026-10-14T03:11:11.785956+00:00",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "matplotlib": "3.10.8",
+  "platform": "Windows AMD64",
+  "command": "python run_replication.py",
+  "input_sha256": {
+    "config/experiment.json": "322b248505095b123900ec21de415aad2fe31b902d66b243f3df499ea97aa3e7",
+    "data/reference/table1.csv": "337934bdda8626a3535da7bbd3a87b30a3b2571ad5fd64f24adf41eb7598025c",
+    "src/model.py": "d616283ac00075b74805b24b32c9d8449de9d69e1b0998f8bbf5e6f3c2397866",
+    "src/analysis.py": "09fefb60ee71f3de3e5da0d209d99c24d5dfac998a85d9b5d45ccf4613fef8a7",
+    "src/data_archive.py": "d1ac74df4c5699f9f1319a86e0af292ab27f6c1038b69331bc80c5d1b5be2ae8",
+    "run_replication.py": "f02a3cbf05570600c55243328711840f178347feb4f4c2f7feb18d9ba0c093fb"
+  }
+}

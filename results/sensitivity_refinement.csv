@@ -1,0 +1,4 @@
+controller,tau_factor,delay_factor,coarse_step_s,fine_step_s,coarse_overshoot_pct,fine_overshoot_pct,overshoot_difference_percentage_points
+critical,1.2,1.2,0.002,0.001,4.845256461937697,4.845256301932288,-1.6000540892235904e-07
+fast,1.2,1.2,0.002,0.001,10.10463575663838,10.104635838990683,8.235230275488448e-08
+chr,0.8,0.8,0.002,0.001,0.0,0.0,0.0

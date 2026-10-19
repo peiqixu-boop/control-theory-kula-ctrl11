@@ -1,0 +1,87 @@
+{
+  "utc_verified": "2026-10-14T03:11:37.223454+00:00",
+  "method": "Independent source copy, initially without generated CSVs; restore from archive, analyse, then rerun all simulations and tests.",
+  "archive_restore_byte_identical": {
+    "data/generated/critical.csv": true,
+    "data/generated/fast.csv": true,
+    "data/generated/chr.csv": true,
+    "results/metrics.csv": true,
+    "results/comparison_table1.csv": true
+  },
+  "independent_rerun_byte_identical": {
+    "data/generated/critical.csv": true,
+    "data/generated/fast.csv": true,
+    "data/generated/chr.csv": true,
+    "results/metrics.csv": true,
+    "results/comparison_table1.csv": true
+  },
+  "sha256": {
+    "data/generated/critical.csv": "94e3fbaf193edb63552efb16c93e32c45a8caf68dd654b9e6918428e4ff55b53",
+    "data/generated/fast.csv": "264c9bbe78811b234bd62f66dbceff8103104a5885d98b36c3b495bb5b89d2d3",
+    "data/generated/chr.csv": "b78029b88029053f8e65f032df3caa8d6cb8d3f9c574fec9aa0ebd5a99340231",
+    "results/metrics.csv": "65fa5100a253e8054eee79e55d7dc9f73bb95b41c388c095e94f1b4297f971b0",
+    "results/comparison_table1.csv": "6cb1799193495fed65142572da8a6ca80136610a0dca9969c0892916d93e1518"
+  },
+  "executions": [
+    {
+      "cwd": "C:\\Users\\ASUS\\.codex\\.chatgpt-projects\\g-p-6ab480f987c08191ba8d1371b7559d27\\control-theory-kula-replication",
+      "argv": [
+        "C:\\Users\\ASUS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-c",
+        "import sys,runpy;sys.path.insert(0,'C:\\\\Users\\\\ASUS\\\\.codex\\\\.chatgpt-projects\\\\g-p-6ab480f987c08191ba8d1371b7559d27\\\\.task-deps');sys.path.insert(0,\".\");runpy.run_path('run_replication.py',run_name=\"__main__\")"
+      ],
+      "exit_code": 0,
+      "log": "results\\logs\\console.log"
+    },
+    {
+      "cwd": "C:\\Users\\ASUS\\.codex\\.chatgpt-projects\\g-p-6ab480f987c08191ba8d1371b7559d27\\control-theory-kula-replication",
+      "argv": [
+        "C:\\Users\\ASUS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-c",
+        "import sys,runpy;sys.path.insert(0,'C:\\\\Users\\\\ASUS\\\\.codex\\\\.chatgpt-projects\\\\g-p-6ab480f987c08191ba8d1371b7559d27\\\\.task-deps');sys.path.insert(0,\".\");sys.argv=[\"unittest\",\"discover\",\"-s\",\"tests\",\"-v\"];runpy.run_module(\"unittest\",run_name=\"__main__\")"
+      ],
+      "exit_code": 0,
+      "log": "results\\logs\\tests.log"
+    },
+    {
+      "cwd": "C:\\Users\\ASUS\\.codex\\.chatgpt-projects\\g-p-6ab480f987c08191ba8d1371b7559d27\\control-theory-kula-replication",
+      "argv": [
+        "C:\\Users\\ASUS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-c",
+        "import sys,runpy;sys.path.insert(0,'C:\\\\Users\\\\ASUS\\\\.codex\\\\.chatgpt-projects\\\\g-p-6ab480f987c08191ba8d1371b7559d27\\\\.task-deps');sys.path.insert(0,\".\");runpy.run_path('tools/pack_data.py',run_name=\"__main__\")"
+      ],
+      "exit_code": 0,
+      "log": "results\\logs\\pack_data.log"
+    },
+    {
+      "cwd": "C:\\Users\\ASUS\\.codex\\.chatgpt-projects\\g-p-6ab480f987c08191ba8d1371b7559d27\\verification-copy",
+      "argv": [
+        "C:\\Users\\ASUS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-c",
+        "import sys,runpy;sys.path.insert(0,'C:\\\\Users\\\\ASUS\\\\.codex\\\\.chatgpt-projects\\\\g-p-6ab480f987c08191ba8d1371b7559d27\\\\.task-deps');sys.path.insert(0,\".\");runpy.run_path('analyse_saved_data.py',run_name=\"__main__\")"
+      ],
+      "exit_code": 0,
+      "log": "results\\logs\\data_reload.log"
+    },
+    {
+      "cwd": "C:\\Users\\ASUS\\.codex\\.chatgpt-projects\\g-p-6ab480f987c08191ba8d1371b7559d27\\verification-copy",
+      "argv": [
+        "C:\\Users\\ASUS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-c",
+        "import sys,runpy;sys.path.insert(0,'C:\\\\Users\\\\ASUS\\\\.codex\\\\.chatgpt-projects\\\\g-p-6ab480f987c08191ba8d1371b7559d27\\\\.task-deps');sys.path.insert(0,\".\");runpy.run_path('run_replication.py',run_name=\"__main__\")"
+      ],
+      "exit_code": 0,
+      "log": "results\\logs\\clean_checkout_console.log"
+    },
+    {
+      "cwd": "C:\\Users\\ASUS\\.codex\\.chatgpt-projects\\g-p-6ab480f987c08191ba8d1371b7559d27\\verification-copy",
+      "argv": [
+        "C:\\Users\\ASUS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-c",
+        "import sys,runpy;sys.path.insert(0,'C:\\\\Users\\\\ASUS\\\\.codex\\\\.chatgpt-projects\\\\g-p-6ab480f987c08191ba8d1371b7559d27\\\\.task-deps');sys.path.insert(0,\".\");sys.argv=[\"unittest\",\"discover\",\"-s\",\"tests\",\"-v\"];runpy.run_module(\"unittest\",run_name=\"__main__\")"
+      ],
+      "exit_code": 0,
+      "log": "results\\logs\\clean_checkout_tests.log"
+    }
+  ]
+}

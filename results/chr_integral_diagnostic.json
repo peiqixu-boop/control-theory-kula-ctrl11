@@ -1,0 +1,170 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "input_sha256": {
+    "src/model.py": "d616283ac00075b74805b24b32c9d8449de9d69e1b0998f8bbf5e6f3c2397866",
+    "config/experiment.json": "322b248505095b123900ec21de415aad2fe31b902d66b243f3df499ea97aa3e7",
+    "data/reference/table1.csv": "337934bdda8626a3535da7bbd3a87b30a3b2571ad5fd64f24adf41eb7598025c",
+    "tools/check_chr_integrals.py": "eb9a431f04d5b583e0d054cf00ce7ff422c73bc6bc3419ae16ee4f01c5bd0c65"
+  },
+  "analytic_signed_error_integral": 6.857142857142858,
+  "analytic_signed_time_weighted_integral": 38.79183673469389,
+  "infinite_horizon_IAE_lower_bound": 6.857142857142858,
+  "infinite_horizon_ITAE_lower_bound": 38.79183673469389,
+  "assumptions": "Stable nominal unit-step feedback with zero history and convergent moments. The lower bounds equal IAE/ITAE if error is nonnegative for all time; sampled sign checks are not a proof of that condition.",
+  "runs": [
+    {
+      "step_s": 0.001,
+      "horizon_s": 30.0,
+      "minimum_sampled_error": 0.00894945482047238,
+      "signed_error_integral": 6.7943421731635345,
+      "signed_time_weighted_integral": 36.467130834554254,
+      "signed_integral_residual": -0.06280068397932315,
+      "signed_time_weighted_residual": -2.3247059001396337,
+      "metrics": {
+        "overshoot_pct": 0.0,
+        "settling_time_s": 24.355702100306942,
+        "IAE": 6.7943421731635345,
+        "ITAE": 36.467130834554254,
+        "ISE": 4.331486535449986,
+        "ITSE": 12.045960924884684,
+        "final_error": 0.00894945482047238,
+        "tail_max_abs_error": 0.021039233479649644
+      },
+      "difference_from_paper_pct": {
+        "IAE": -0.009681042479259272,
+        "ITAE": 0.04699817436009113,
+        "ISE": -0.011852828947700456,
+        "ITSE": -0.06669217782742098
+      }
+    },
+    {
+      "step_s": 0.001,
+      "horizon_s": 100.0,
+      "minimum_sampled_error": 4.163834037562708e-07,
+      "signed_error_integral": 6.857139949886867,
+      "signed_time_weighted_integral": 38.79152398015985,
+      "signed_integral_residual": -2.9072559906140327e-06,
+      "signed_time_weighted_residual": -0.0003127545340362303,
+      "metrics": {
+        "overshoot_pct": 0.0,
+        "settling_time_s": 24.355702100306942,
+        "IAE": 6.857139949886867,
+        "ITAE": 38.79152398015985,
+        "ISE": 4.3317675537927425,
+        "ITSE": 12.055377459511702,
+        "final_error": 4.163834037562708e-07,
+        "tail_max_abs_error": 1.7313891008674531e-06
+      },
+      "difference_from_paper_pct": {
+        "IAE": 0.9144952154064301,
+        "ITAE": 6.423934101947459,
+        "ISE": -0.005365794258016532,
+        "ITSE": 0.011427405937469715
+      }
+    },
+    {
+      "step_s": 0.001,
+      "horizon_s": 200.0,
+      "minimum_sampled_error": 2.7711166694643907e-13,
+      "signed_error_integral": 6.857142871724394,
+      "signed_time_weighted_integral": 38.79183666679443,
+      "signed_integral_residual": 1.4581535978663851e-08,
+      "signed_time_weighted_residual": -6.789945672380782e-08,
+      "metrics": {
+        "overshoot_pct": 0.0,
+        "settling_time_s": 24.355702100306942,
+        "IAE": 6.857142871724394,
+        "ITAE": 38.79183666679443,
+        "ISE": 4.331767553793351,
+        "ITSE": 12.055377459574666,
+        "final_error": 2.7711166694643907e-13,
+        "tail_max_abs_error": 1.100008972798605e-12
+      },
+      "difference_from_paper_pct": {
+        "IAE": 0.9145382152228709,
+        "ITAE": 6.424791952796793,
+        "ISE": -0.005365794243972211,
+        "ITSE": 0.011427406459807443
+      }
+    },
+    {
+      "step_s": 0.0005,
+      "horizon_s": 30.0,
+      "minimum_sampled_error": 0.00894945482466758,
+      "signed_error_integral": 6.794342162225004,
+      "signed_time_weighted_integral": 36.46713088366167,
+      "signed_integral_residual": -0.06280069491785323,
+      "signed_time_weighted_residual": -2.3247058510322205,
+      "metrics": {
+        "overshoot_pct": 0.0,
+        "settling_time_s": 24.355702089050084,
+        "IAE": 6.794342162225004,
+        "ITAE": 36.46713088366167,
+        "ISE": 4.3314865128746805,
+        "ITSE": 12.045960941114664,
+        "final_error": 0.00894945482466758,
+        "tail_max_abs_error": 0.021039233477178954
+      },
+      "difference_from_paper_pct": {
+        "IAE": -0.009681203458355991,
+        "ITAE": 0.046998309085499734,
+        "ISE": -0.011853350076629354,
+        "ITSE": -0.06669204318346944
+      }
+    },
+    {
+      "step_s": 0.0005,
+      "horizon_s": 100.0,
+      "minimum_sampled_error": 4.1638341063965356e-07,
+      "signed_error_integral": 6.8571399389493894,
+      "signed_time_weighted_integral": 38.791524030785396,
+      "signed_integral_residual": -2.918193468204322e-06,
+      "signed_time_weighted_residual": -0.000312703908491585,
+      "metrics": {
+        "overshoot_pct": 0.0,
+        "settling_time_s": 24.355702089050084,
+        "IAE": 6.8571399389493894,
+        "ITAE": 38.791524030785396,
+        "ISE": 4.331767531216504,
+        "ITSE": 12.055377475721217,
+        "final_error": 4.1638341063965356e-07,
+        "tail_max_abs_error": 1.7313891131909287e-06
+      },
+      "difference_from_paper_pct": {
+        "IAE": 0.9144950544428099,
+        "ITAE": 6.4239342408378475,
+        "ISE": -0.0053663154084948594,
+        "ITSE": 0.011427540411612647
+      }
+    },
+    {
+      "step_s": 0.0005,
+      "horizon_s": 200.0,
+      "minimum_sampled_error": 5.540012892879531e-13,
+      "signed_error_integral": 6.857142860787838,
+      "signed_time_weighted_integral": 38.79183671758933,
+      "signed_integral_residual": 3.644980317574209e-09,
+      "signed_time_weighted_residual": -1.7104561322867085e-08,
+      "metrics": {
+        "overshoot_pct": 0.0,
+        "settling_time_s": 24.355702089050084,
+        "IAE": 6.857142860787838,
+        "ITAE": 38.79183671758933,
+        "ISE": 4.331767531217112,
+        "ITSE": 12.055377475784182,
+        "final_error": 5.540012892879531e-13,
+        "tail_max_abs_error": 1.120215031846783e-12
+      },
+      "difference_from_paper_pct": {
+        "IAE": 0.9145380542728176,
+        "ITAE": 6.424792092151788,
+        "ISE": -0.005366315394450538,
+        "ITSE": 0.01142754093397258
+      }
+    }
+  ]
+}

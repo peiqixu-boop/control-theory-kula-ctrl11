@@ -1,0 +1,84 @@
+{
+  "metrics": [
+    {
+      "controller": "critical",
+      "overshoot_pct": 0.0,
+      "settling_time_s": 13.063191761038784,
+      "IAE": 5.436563672249516,
+      "ITAE": 18.683097007442175,
+      "ISE": 3.960893264772827,
+      "ITSE": 9.139588054799194,
+      "final_error": 9.836575998178887e-14,
+      "tail_max_abs_error": 9.836575998178887e-14
+    },
+    {
+      "controller": "fast",
+      "overshoot_pct": 1.7982136609822508,
+      "settling_time_s": 8.177882125829719,
+      "IAE": 4.508443257446813,
+      "ITAE": 12.120223120920135,
+      "ISE": 3.5037214164603716,
+      "ITSE": 6.796764983931202,
+      "final_error": -5.81756864903582e-14,
+      "tail_max_abs_error": 5.81756864903582e-14
+    },
+    {
+      "controller": "chr",
+      "overshoot_pct": 0.0,
+      "settling_time_s": 24.355702100306942,
+      "IAE": 6.857139949886867,
+      "ITAE": 38.79152398015985,
+      "ISE": 4.3317675537927425,
+      "ITSE": 12.055377459511702,
+      "final_error": 4.163834037562708e-07,
+      "tail_max_abs_error": 1.7313891008674531e-06
+    }
+  ],
+  "max_table1_abs_relative_difference_pct": 6.4239341019474585,
+  "exact_solution_checks": [
+    {
+      "controller": "critical",
+      "time_end_s": 20,
+      "max_absolute_output_error": 1.1093859164645892e-09
+    },
+    {
+      "controller": "fast",
+      "time_end_s": 20,
+      "max_absolute_output_error": 1.7334276236624646e-09
+    }
+  ],
+  "signed_integral_checks": [
+    {
+      "controller": "critical",
+      "signed_error_integral": 5.436563672249516,
+      "analytic_value": 5.43656365691809,
+      "absolute_error": 1.5331425906595086e-08,
+      "signed_time_weighted_integral": 18.683097007442175,
+      "analytic_time_weighted_value": 18.683097081886412,
+      "time_weighted_absolute_error": 7.444423744118467e-08
+    },
+    {
+      "controller": "fast",
+      "signed_error_integral": 4.349250944693532,
+      "analytic_value": 4.349250925534472,
+      "absolute_error": 1.9159060116180626e-08,
+      "signed_time_weighted_integral": 10.217481710365009,
+      "analytic_time_weighted_value": 10.217481762193517,
+      "time_weighted_absolute_error": 5.1828507707796234e-08
+    },
+    {
+      "controller": "chr",
+      "signed_error_integral": 6.857139949886867,
+      "analytic_value": 6.857142857142858,
+      "absolute_error": 2.9072559906140327e-06,
+      "signed_time_weighted_integral": 38.79152398015985,
+      "analytic_time_weighted_value": 38.79183673469389,
+      "time_weighted_absolute_error": 0.0003127545340362303
+    }
+  ],
+  "sensitivity_cases": 27,
+  "elapsed_seconds": 8.14047670000582,
+  "remote_repository": "https://github.com/peiqixu-boop/control-theory-kula-replication",
+  "simulation_status": "completed",
+  "published_curve_digitisation": "not performed; visual/feature comparison only"
+}

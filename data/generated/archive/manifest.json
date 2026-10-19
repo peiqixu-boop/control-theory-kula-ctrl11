@@ -1,0 +1,76 @@
+{
+  "critical": {
+    "bytes": 8161725,
+    "sha256": "94e3fbaf193edb63552efb16c93e32c45a8caf68dd654b9e6918428e4ff55b53",
+    "parts": [
+      {
+        "file": "critical.csv.gz.part001",
+        "sha256": "35bc39986bb1f035c51b5a5e197f6d4d71644f4bb9e1031f33d5c8163381d231"
+      },
+      {
+        "file": "critical.csv.gz.part002",
+        "sha256": "d782803afe4e80345d43c40394b0feb9110634b08f2e55dfbbca016fc0158385"
+      },
+      {
+        "file": "critical.csv.gz.part003",
+        "sha256": "8f2c36fb558b02f7211f8fb1195aec79d80e3446556bbc72fde12fa1caaec31b"
+      },
+      {
+        "file": "critical.csv.gz.part004",
+        "sha256": "d65d6901ecb421aa0236fce3b625c0845a7c222155af88081acd582aad7a8141"
+      }
+    ]
+  },
+  "fast": {
+    "bytes": 8168716,
+    "sha256": "264c9bbe78811b234bd62f66dbceff8103104a5885d98b36c3b495bb5b89d2d3",
+    "parts": [
+      {
+        "file": "fast.csv.gz.part001",
+        "sha256": "ee68ce7a159a8a5ce78f42c1ad89d118ac7d12d62584bb0b7c445953e81a5207"
+      },
+      {
+        "file": "fast.csv.gz.part002",
+        "sha256": "aaf7da96cee97e344fc03161e431b1f8442977ce85f622f024f2f57d5308b918"
+      },
+      {
+        "file": "fast.csv.gz.part003",
+        "sha256": "201112e031f95087adc6705b5ef25dd9a36176c68619d30272cc057f7c28bf0d"
+      },
+      {
+        "file": "fast.csv.gz.part004",
+        "sha256": "b44cbd3e34debe87317726ab1ed2da6b2cc631ce8e8546d8a3342b1fad51b665"
+      }
+    ]
+  },
+  "chr": {
+    "bytes": 8106950,
+    "sha256": "b78029b88029053f8e65f032df3caa8d6cb8d3f9c574fec9aa0ebd5a99340231",
+    "parts": [
+      {
+        "file": "chr.csv.gz.part001",
+        "sha256": "4a9fcd92b816f908a90aefe4230db56206a55c69d7e6391eef27d88318468f9b"
+      },
+      {
+        "file": "chr.csv.gz.part002",
+        "sha256": "77099c2a6bfc0af547cca775c36db8d48dcaa4fbc86e428f5b1be274584424da"
+      },
+      {
+        "file": "chr.csv.gz.part003",
+        "sha256": "72022be53d0da56f8b5d31f7ca411d2b4c20c8e589a12616b7f9ec108b50c5a1"
+      },
+      {
+        "file": "chr.csv.gz.part004",
+        "sha256": "e66576631d1973f33669b88c4c4d71d9e2d440affd0bb2f041471003f08b121b"
+      },
+      {
+        "file": "chr.csv.gz.part005",
+        "sha256": "82b2c05df290db378918b805e6234c3ec1be987361783cb7e94e8a1c4dbf9271"
+      },
+      {
+        "file": "chr.csv.gz.part006",
+        "sha256": "f850f1afbd584b76792057ffcd838aa4d5e88ced09cec9c017d2df087f3accc1"
+      }
+    ]
+  }
+}

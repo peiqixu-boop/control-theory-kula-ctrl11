@@ -1,0 +1,9 @@
+test_causality_and_first_delayed_interval (test_model.ModelChecks.test_causality_and_first_delayed_interval) ... ok
+test_double_root_and_rules (test_model.ModelChecks.test_double_root_and_rules) ... ok
+test_metrics_known_exponential (test_model.ModelChecks.test_metrics_known_exponential) ... ok
+test_zero_gain (test_model.ModelChecks.test_zero_gain) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.008s
+
+OK

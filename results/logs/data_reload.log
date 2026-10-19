@@ -1,0 +1,4 @@
+Loaded critical: 100001 rows; 0 nonfinite values; time [0.0, 100.0] s
+Loaded fast: 100001 rows; 0 nonfinite values; time [0.0, 100.0] s
+Loaded chr: 100001 rows; 0 nonfinite values; time [0.0, 100.0] s
+Recomputed 3 controller summaries and 12 published-value comparisons.

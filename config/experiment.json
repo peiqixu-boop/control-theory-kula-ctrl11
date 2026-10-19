@@ -1,0 +1,12 @@
+{
+  "paper_doi": "10.3390/app14135468",
+  "plant": {"gain": 2.0, "time_constant_s": 4.0, "delay_s": 2.0},
+  "step_amplitude": 1.0,
+  "primary_step_s": 0.001,
+  "primary_horizon_s": 100.0,
+  "convergence_steps_s": [0.004, 0.002, 0.001],
+  "horizon_checks_s": [20.0, 30.0, 50.0, 100.0],
+  "pade_orders": [1, 3, 5, 7],
+  "sensitivity_factors": [0.8, 1.0, 1.2],
+  "sensitivity_step_s": 0.002
+}

@@ -1,0 +1,4 @@
+controller,feature,reference_value,precision_note,source
+critical,settling_time_s,13.1,"approximate annotation; not digitized curve data","Figure 2, PDF p.10"
+fast,settling_time_s,8.2,"approximate annotation; not digitized curve data","Figure 2, PDF p.10"
+chr,settling_time_s,24.3,"approximate annotation; not digitized curve data","Figure 8, PDF p.14"

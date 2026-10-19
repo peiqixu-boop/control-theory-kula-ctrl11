@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.tmp
+repository.bundle
+data/generated/*.csv
