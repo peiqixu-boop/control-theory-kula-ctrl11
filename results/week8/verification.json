@@ -1,0 +1,115 @@
+{
+  "utc_verified": "2026-10-29T03:28:46.485685+00:00",
+  "baseline_source_revision": "b513f7b48265af0e214001b3b006d5b53b33560b",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "platform": "Windows"
+  },
+  "input_sha256": {
+    "src/model.py": "d616283ac00075b74805b24b32c9d8449de9d69e1b0998f8bbf5e6f3c2397866",
+    "tests/test_model.py": "1b355dd72eeec465b18c8537c5e9c86aeb2625b4da1bd2100258e7911839674c",
+    "config/experiment.json": "322b248505095b123900ec21de415aad2fe31b902d66b243f3df499ea97aa3e7",
+    "data/reference/table1.csv": "337934bdda8626a3535da7bbd3a87b30a3b2571ad5fd64f24adf41eb7598025c",
+    "data/generated/archive/manifest.json": "cf66c1efc4b857a8c670979810bd5aded883cb02935e179322acbfd9c6c0ad74",
+    "results/metrics.csv": "f31018838cd7605e0f35b4ea32c7d4cbfe17216e04ade48fa85ac37967ddc603",
+    "results/sensitivity.csv": "2b89700f5c606eeadd65127d5707b221b7f8188b13a5bdcf09e3e729578d29c5",
+    "tools/verify_week8.py": "edfcd768dae2ed4ec1b2bb202095de9acde53bb3b6b203bb3edd0a133a55130b"
+  },
+  "numeric_comparison_absolute_tolerance": 1e-08,
+  "baseline": {
+    "critical": {
+      "rows": 100001,
+      "input": "archive decoded in memory",
+      "csv_sha256": "94e3fbaf193edb63552efb16c93e32c45a8caf68dd654b9e6918428e4ff55b53",
+      "exact_array_match": true,
+      "max_absolute_data_difference": 0.0,
+      "metrics": {
+        "overshoot_pct": 0.0,
+        "settling_time_s": 13.063191761038784,
+        "IAE": 5.436563672249516,
+        "ITAE": 18.683097007442175,
+        "ISE": 3.960893264772827,
+        "ITSE": 9.139588054799194,
+        "final_error": 9.836575998178887e-14,
+        "tail_max_abs_error": 9.836575998178887e-14
+      },
+      "exact_solution_max_output_error_0_20s": 1.1093859164645892e-09
+    },
+    "fast": {
+      "rows": 100001,
+      "input": "archive decoded in memory",
+      "csv_sha256": "264c9bbe78811b234bd62f66dbceff8103104a5885d98b36c3b495bb5b89d2d3",
+      "exact_array_match": true,
+      "max_absolute_data_difference": 0.0,
+      "metrics": {
+        "overshoot_pct": 1.7982136609822508,
+        "settling_time_s": 8.177882125829719,
+        "IAE": 4.508443257446813,
+        "ITAE": 12.120223120920135,
+        "ISE": 3.5037214164603716,
+        "ITSE": 6.796764983931202,
+        "final_error": -5.81756864903582e-14,
+        "tail_max_abs_error": 5.81756864903582e-14
+      },
+      "exact_solution_max_output_error_0_20s": 1.7334276236624646e-09
+    },
+    "chr": {
+      "rows": 100001,
+      "input": "archive decoded in memory",
+      "csv_sha256": "b78029b88029053f8e65f032df3caa8d6cb8d3f9c574fec9aa0ebd5a99340231",
+      "exact_array_match": true,
+      "max_absolute_data_difference": 0.0,
+      "metrics": {
+        "overshoot_pct": 0.0,
+        "settling_time_s": 24.355702100306942,
+        "IAE": 6.857139949886867,
+        "ITAE": 38.79152398015985,
+        "ISE": 4.3317675537927425,
+        "ITSE": 12.055377459511702,
+        "final_error": 4.163834037562708e-07,
+        "tail_max_abs_error": 1.7313891008674531e-06
+      }
+    }
+  },
+  "sensitivity": {
+    "critical": {
+      "cases": 9,
+      "max_metric_difference": 0.0,
+      "max_overshoot_pct": 4.845256461937697,
+      "checked_tau_factor": 1.2,
+      "checked_delay_factor": 1.2,
+      "fine_step_s": 0.001,
+      "fine_overshoot_pct": 4.845256301932288,
+      "overshoot_refinement_difference_percentage_points": -1.6000540892235904e-07
+    },
+    "fast": {
+      "cases": 9,
+      "max_metric_difference": 0.0,
+      "max_overshoot_pct": 10.10463575663838,
+      "checked_tau_factor": 1.2,
+      "checked_delay_factor": 1.2,
+      "fine_step_s": 0.001,
+      "fine_overshoot_pct": 10.104635838990683,
+      "overshoot_refinement_difference_percentage_points": 8.235230275488448e-08
+    },
+    "chr": {
+      "cases": 9,
+      "max_metric_difference": 0.0,
+      "max_overshoot_pct": 0.0,
+      "checked_tau_factor": 0.8,
+      "checked_delay_factor": 0.8,
+      "fine_step_s": 0.001,
+      "fine_overshoot_pct": 0.0,
+      "overshoot_refinement_difference_percentage_points": 0.0
+    }
+  },
+  "assumptions": "Unit step; zero history; nominal explicit-delay PI loop. Signed moment bounds require stability and convergent moments. Sampled signs and finite uncertainty grids are not proofs.",
+  "scientific_tests_passed": 4,
+  "chr_signed_moments_and_absolute_metric_lower_bounds": {
+    "IAE": 6.857142857142858,
+    "ITAE": 38.79183673469389
+  },
+  "all_checks_passed": true
+}

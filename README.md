@@ -67,6 +67,33 @@ Primary outputs:
 - [Numerical validation](docs/validation.md) and [method derivation](docs/method.md)
 - [Model assumptions and deviations](docs/deviations.md)
 
+## Week 8 progress
+
+The Week 8 verification re-executes the frozen experiment without changing the
+100 s baseline. All three saved trajectories match exactly in the recorded
+environment, four scientific tests pass, and all 27 fixed-gain plant-mismatch
+cases reproduce the saved metrics. CHR checks cover 30, 100 and 200 s with
+steps of 0.001 and 0.0005 s; a separate table records the 30–100 s tail.
+
+- [Stage findings and remaining work](docs/week8_progress.md)
+- [Verification results and environment](results/week8/verification.json)
+- [CHR horizon comparison](results/week8/chr_horizon_comparison.csv)
+- [CHR tail contributions](results/week8/chr_tail_contributions.csv)
+- [27-case sensitivity recheck](results/week8/sensitivity_recheck.csv)
+- [Scientific test log](results/week8/tests.log)
+
+To repeat these checks into a new directory:
+
+```bash
+python tools/verify_week8.py --output-dir results/week8_rerun
+```
+
+Relative output paths are resolved from the repository root. The destination
+must not exist; choose another directory for subsequent runs. Missing baseline
+CSVs are decoded from the checked archive in memory, without restoring or
+overwriting the original data. The command requires only the numerical
+dependencies in `requirements.txt` and does not build a report.
+
 ## Data and reproduction
 
 These are model-generated simulation data, not measurements. Three baseline CSVs each contain 100001 rows with columns `time_s, reference, output, error, control`. Paper reference values are stored separately in `data/reference/`.
